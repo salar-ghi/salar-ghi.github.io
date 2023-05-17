@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: #eaeaea;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-main: #1b1b1b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +17,52 @@
   }
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family:  sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-rgb); 
+  background:  var(--background-main);
+  padding: 0;
+  margin: 0;
+}
+
+.odd-triangle {
+  width: 32px;
+  height: 46px;
+  margin: auto;
+  box-sizing: border-box;
+  background: linear-gradient(#8d8d8d 0% , #e9e9e9 20%,  #fff 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  cursor: pointer;
+}
+
+.odd-triangle:hover {
+  transform: scale(1.25);
+  transition: transform 350ms ease;
+}
+
+.even-triangle {
+  width: 26px;
+  height: 36px;
+  margin: auto;
+  box-sizing: border-box;
+  background: linear-gradient(#a3a3a3  0% , #bababa 100%);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  cursor: pointer;
+}
+
+.even-triangle:hover {
+  transform: scale(1.39);
+  transition: transform 450ms ease;
 }
