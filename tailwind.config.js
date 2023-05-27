@@ -20,11 +20,15 @@ module.exports = withMT({
       fontFamily: {
 				fondaItalic: ['Fonda-italic'],
 				niconne: ['Niconne'],
-			}
+			},
+      textShadow: {
+        'golden': '0 2px 2px rgba(166, 124, 0, 0.55)',
+     }
     },
   },
   plugins: [
     require('tailwind-scrollbar'),
+    require('tailwindcss-textshadow'),
     require('tailwind-scrollbar-hide')
   ],
 });

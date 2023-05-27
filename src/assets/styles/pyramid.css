@@ -4,7 +4,8 @@
     margin: 0 auto;
     position: relative;
     perspective: 300px;
-    perspective-origin: 55% 38%;
+    /* perspective-origin: 55% 38%; */
+    perspective-origin: 55% 30%;
 }
 .side {
     position: absolute;
@@ -12,9 +13,9 @@
     top: 220px;
     width: 0;
     height: 0;
-    border-left: 70px dashed transparent;
-    border-right: 70px dashed transparent;
-    border-bottom: 140px dashed #d8d8d8;
+    border-left: 71px solid transparent;
+    border-right: 71px solid transparent;
+    border-bottom: 140px solid #d8d8d8;
     transform-origin: 50% 0%;
     animation: spin 5s infinite linear;
 }
@@ -36,24 +37,27 @@
     25% {
         transform: rotateY(90deg) rotateX(30deg);
         /* border-bottom-color: #00a2e6; */
-        border-bottom-color: #C5C5C5;
+        /* border-bottom-color: #C5C5C5; */
+        border-bottom-color: #d2d2d2;        
         opacity: 1;
    }
     25.1% {
-        opacity: 0;
+        opacity: 0.2;
    }
     50% {
         transform: rotateY(180deg) rotateX(30deg);
         /* border-bottom-color: #0089c2; */
-        border-bottom-color: #B3B3B3;
+        /* border-bottom-color: #B3B3B3; */
+        border-bottom-color: #bababa;
    }
     74.9% {
-        opacity: 0;
+        opacity: 0.3;
    }
     75% {
         transform: rotateY(270deg) rotateX(30deg);
         /* border-bottom-color: #007eb3; */
-        border-bottom-color: #9C9C9C;
+        /* border-bottom-color: #9C9C9C; */
+        border-bottom-color: #a3a3a3;
         opacity: 1;
    }
     100% {
@@ -69,12 +73,12 @@
     left: 160px;
     display: flex;
     flex-direction: row;
-    color: #fff;
+    color: #D6BD68;
     justify-items: center;
     align-items: center;
     text-align: center;
-    justify-content: center;
-
+    justify-content: center;    
+    text-shadow: 0 2.5px 2.5px rgba(166, 124, 0, 0.55);
     animation: logoMotion 5s infinite linear;
     z-index: 5;
 }
@@ -104,8 +108,10 @@
     left: 175px;
     width: 55px;
     height: 55px;
-    background-color: #d9d9d9;
-    box-shadow: 0 0 40px 40px #D8D8D8;
+    /* background-color: #a3a3a3; */
+    background-color: rgba(163, 163, 163, 0.68);
+    /* opacity: 0.8; */
+    box-shadow: 0 0 45px 45px rgba(117, 117, 117, 0.88);
     animation: shadow 6s infinite linear;
 }
 @keyframes shadow {

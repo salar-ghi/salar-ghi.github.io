@@ -9,9 +9,9 @@ const SocialIcons = () => {
     <div className='flex flex-row items-center justify-center mx-auto
         fixed top-5 left-0 bg-transparent z-30 last:-mx-1 last:my-0 -ml-1' >
             
-        <motion.span className='h-[0.2px] w-[calc(100vw - 58vw)] bg-[#e9e9e9] mr-1 my-auto'
+        <motion.span className='h-[0.2px] w-[calc(100vw - 55vw)] bg-[#e9e9e9] mr-1 my-auto'
             initial={{ width: 0, height: 0.2 }}
-                animate={{ width: 'calc(100vw - 58vw)' }}
+                animate={{ width: 'calc(100vw - 55vw)' }}
                 transition= {{ type: 'spring', duration: 1, delay: 0.6 }} >
         </motion.span>
 

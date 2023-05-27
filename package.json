@@ -26,6 +26,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "tailwind-scrollbar": "^3.0.4"
+    "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss-textshadow": "^2.1.3"
   }
 }
