@@ -1,6 +1,11 @@
+.container {
+    width: calc(100vw);
+    height: calc(100vh);    
+}
+
 .pyramid {
     width: calc(100vw);
-    height: calc(100vh);
+    height: calc(72vh);
     margin: auto;
     position: relative;
     perspective: 300px;

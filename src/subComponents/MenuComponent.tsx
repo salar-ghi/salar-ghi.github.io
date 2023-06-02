@@ -17,21 +17,19 @@ const Menu = () => {
       <motion.div initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:1}} >
-          <div className='transititext-primary text-primary transition duration-75 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600'>
-              
+          {/* <div className='transititext-primary text-primary transition duration-75 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600'>               */}
               <Tooltip content="Home" placement="right-start" 
-                className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
                 <div className='odd-triangle'></div>
               </Tooltip>
-
-          </div>
+          {/* </div> */}
       </motion.div>
 
       <motion.div initial={{ opacity: 0 , scale: 0 }}
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:1.2}} >
           <Tooltip content="About" placement="right-start" 
-                  className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                  className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
             <div className='even-triangle'></div>
           </Tooltip>
       </motion.div>
@@ -40,7 +38,7 @@ const Menu = () => {
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:1.4}} >
           <Tooltip content="Projects" placement="right-start" 
-                  className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                  className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
             <div className='odd-triangle'></div>
           </Tooltip>
       </motion.div>
@@ -49,7 +47,7 @@ const Menu = () => {
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:1.6}} >
           <Tooltip content="Blog" placement="right-start" 
-                  className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                  className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
             <div className='even-triangle'></div>
           </Tooltip>
       </motion.div>
@@ -58,7 +56,7 @@ const Menu = () => {
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:1.8}} >
           <Tooltip content="Skills" placement="right-start" 
-                  className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                  className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
             <div className='odd-triangle'></div>
           </Tooltip>
       </motion.div>
@@ -67,7 +65,7 @@ const Menu = () => {
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:2}} >
           <Tooltip content="Podcast" placement="right-start" 
-                  className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                  className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
             <div className='even-triangle'></div>
           </Tooltip>
       </motion.div>
@@ -76,7 +74,7 @@ const Menu = () => {
         animate={{ opacity: 1, scale:[0,1,1.7,1] }}
         transition={{type:'spring', stiffness: 100, duration:1, delay:2.2}} >
           <Tooltip content="Project" placement="right-start" 
-                  className='font-fondaItalic font-semibold ml-2 text-[#1b1b1b] text-sm bg-[#fff]'>
+                  className='font-fondaItalic font-bold ml-2 text-[#1b1b1b] text-xs bg-[#fff]'>
             <div className='odd-triangle'></div>
           </Tooltip>
       </motion.div>

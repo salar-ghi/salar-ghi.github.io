@@ -18,7 +18,7 @@ const Main = ({  }) => {
 
       <div className=''>
         <Home />
-        {/* <About></About> */}
+        {/* <About /> */}
 
       </div>
     </div>

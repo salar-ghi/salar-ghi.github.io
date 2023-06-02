@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Github, Instagram, Linkedin, Twitter, Youtube } from '../data/AllSvgs';
+import { Envelop, Github, Instagram, Linkedin, Twitter, Youtube } from '../data/AllSvgs';
 
 
 // Hook
@@ -60,9 +60,9 @@ const SocialIcons = () => {
             animate={{opacity: [0, 0.2, 0.8, 1], scale:[0, 1.3 ,2,1]}}
             transition={{type:'spring', duration:1, delay:1}} >
             <Link href={{pathname:"https://github.com/Salarghi93", query: {} }} >
-                <Github width={22} height={22} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
+                <Github width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-5 h-5
+                    w-4 h-4
                     lg:w-6 lg:h-6
                     "/>
             </Link>
@@ -73,9 +73,9 @@ const SocialIcons = () => {
             animate={{opacity: 1, scale:[0,1.3 ,2,1]}}
             transition={{type:'spring', duration:1, delay:1.2}} >
             <Link href={{pathname:"https://www.linkedin.com/in/salar-ghahremani/", query: {} }} >
-                <Linkedin width={22} height={22} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
+                <Linkedin width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none                    
-                    w-5 h-5
+                    w-4 h-4
                     lg:w-6 lg:h-6
                     "/>
             </Link>
@@ -86,9 +86,9 @@ const SocialIcons = () => {
             animate={{opacity: 1, scale:[0,1.3 ,2,1]}}
             transition={{type:'spring', duration:1, delay:1.4}} >
             <Link href={{pathname:"https://twitter.com/salarghi", query: {} }} >
-                <Twitter width={22} height={22} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
+                <Twitter width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-5 h-5
+                    w-4 h-4
                     lg:w-6 lg:h-6
                     "/>
             </Link>
@@ -98,10 +98,10 @@ const SocialIcons = () => {
             initial={{opacity: 0, scale: 0 }}
             animate={{opacity: 1, scale:[0,1.3 ,2,1]}}
             transition={{type:'spring', duration:1, delay:1.6}} >
-            <Link href={{pathname:"https://github.com/sAlArghi93", query: {} }} >
-                <Instagram width={22} height={22} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
+            <Link href={{pathname:"https://www.instagram.com/salarghi", query: {} }} >
+                <Instagram width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-5 h-5
+                    w-4 h-4
                     lg:w-6 lg:h-6"/>
             </Link>
         </motion.div>
@@ -110,13 +110,27 @@ const SocialIcons = () => {
             initial={{opacity: 0, scale: 0 }}
             animate={{opacity: 1, scale:[0,1.3 ,2,1]}}
             transition={{type:'spring', duration:1, delay:1.9}} >
-            <Link href={{pathname:"https://github.com/sAlArghi93", query: {} }} >
-                <Youtube width={22} height={22} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
+            <Link href={{pathname:"https://www.youtube.com/@Salar_G", query: {} }} >
+                <Youtube width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-5 h-5
+                    w-4 h-4
                     lg:w-6 lg:h-6"/>
             </Link>
         </motion.div>
+
+        <motion.div className='mx-[6px] xl:mx-2'
+            initial={{opacity: 0, scale: 0 }}
+            animate={{opacity: 1, scale:[0,1.3 ,2,1]}}
+            transition={{type:'spring', duration:1, delay:1.9}} >
+            <Link href={{pathname:"mailto:salar.ghi1993@gmail.com", query: {} }} >
+                <Envelop width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
+                    ease-in-out hover:duration-200 motion-reduce:hover:transform-none
+                    w-4 h-4
+                    lg:w-6 lg:h-6"/>
+            </Link>
+        </motion.div>
+
+        
 
     </div>
   )
