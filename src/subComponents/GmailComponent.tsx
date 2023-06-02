@@ -32,10 +32,7 @@ const Gmail = () => {
         
         <motion.h3 className="flex flex-row cursor-text mb-1 mr-2 ml-1 
         font-['Fonda-italic'] text-xl tracking-wider font-thin text-[#e9e9e9]"
-            variants={sentence}
-            initial="hidden"
-            animate="visible"
-            >
+            variants={sentence} initial="hidden" animate="visible" >
 
             {gmail.split("").map((char, index) => {
                 return (

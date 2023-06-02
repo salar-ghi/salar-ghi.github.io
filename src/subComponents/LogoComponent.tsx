@@ -36,7 +36,7 @@ const LogoComponent = () => {
   return (
     <div className='flex flex-row items-center justify-center mt-3 z-30 fixed inset-x-0'>
 
-      {/* <motion.h2 className="flex flex-row text-3xl tracking-wider font-semibold font-['Niconne'] [word-spacing: 1.2cm]"
+      <motion.h2 className="flex flex-row text-3xl tracking-wider font-semibold font-['Niconne'] [word-spacing: 1.2cm]"
         variants={sentence1} initial="hidden" animate="visible" >
         {name.split("").map((char, index) => {
           return (
@@ -46,7 +46,7 @@ const LogoComponent = () => {
               </motion.span>
             )}
           )}
-      </motion.h2> */}
+      </motion.h2>
 
       {/* <motion.h2 className="flex flex-row text-3xl ml-3 tracking-wider font-semibold font-['Niconne'] [word-spacing: 1.2cm]"
         variants={sentence2} initial="hidden" animate="visible" >

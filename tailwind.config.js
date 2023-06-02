@@ -23,7 +23,16 @@ module.exports = withMT({
 			},
       textShadow: {
         'golden': '0 2px 2px rgba(166, 124, 0, 0.55)',
-     }
+     },
+     keyframes: {
+        loading: {
+          '0%': { left: '-100%' },
+          '100%': { left: '-10%' },
+        },
+      },
+      animation: {
+        loading: 'loading 0.8s linear ',
+      },
     },
   },
   plugins: [

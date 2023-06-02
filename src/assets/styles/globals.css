@@ -102,3 +102,27 @@ body {
   transform: scale(1.39);
   transition: transform 450ms ease;
 }
+
+@media (600 <= height <= 700px) {
+  .txtintro {
+    bottom: 3rem;
+  }   
+}
+
+@media (700.1px <= height <= 840px) {
+  .txtintro {
+    bottom: 5rem;
+  }   
+}
+
+@media (840.1px <= height <= 1000px) {
+  .txtintro {
+    bottom: 8rem;
+  }   
+}
+
+@media (1000.1px <= height <= 1500px) {
+  .txtintro {
+    bottom: 12rem;
+  }   
+}
