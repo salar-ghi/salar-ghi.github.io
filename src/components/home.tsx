@@ -91,10 +91,10 @@ const Home = () => {
                     Hi, I’m
                 </motion.h2>
 
-                <div className="flex flex-row font-['Fonda-italic'] text-[#D6BD68] bg-transparent font-thin">
+                <div className="flex flex-row font-['Fonda-italic'] text-[#D6BD68] bg-transparent font-normal my-2 sm:my-2 ">
                 
                     <motion.h2 className="flex flex-row tracking-wider text-shadow-golden 
-                        shadow-[#a67c00] text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl "
+                        shadow-[#a67c00] text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-4xl "
                         variants={nameLogo} initial="hidden" animate="visible">
                         
                         {name.split("").map((char, index) => {
@@ -108,7 +108,7 @@ const Home = () => {
                     </motion.h2>
 
                     <motion.h2 className="flex flex-row tracking-wider text-shadow-golden shadow-[#a67c00] 
-                        ml-2 text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl"
+                        ml-2 text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl"
                         variants={sentence2} initial="hidden" animate="visible" >
                         {family.split("").map((char, index) => {
                         return (

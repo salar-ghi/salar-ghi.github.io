@@ -9,7 +9,7 @@ import About from './about';
 
 const Main = ({  }) => {
   return (
-    <div className='bg-[#1b1b1b] overflow-x-scroll scrollbar-hide'>
+    <div className='bg-[#0D0D0D] overflow-x-scroll scrollbar-hide'>
       
       {/* <LogoComponent /> */}
       <SocialIcons />
