@@ -8,7 +8,7 @@ const Menu = () => {
       fixed top-0 left-4 z-30 last:-my-1 last:mx-0 bg-transparent'>
 
 
-      <motion.span className='w-[0.2px] h-[calc(100vh-68vh)] bg-[#e9e9e9] -mt-1 mb-1'
+      <motion.span className='w-[0.6px] h-[calc(100vh-68vh)] bg-[#e9e9e9] -mt-1 mb-1'
         initial={{ height: 0 }}
         animate={{ height: 'calc(30vh)' }}
         transition= {{ type: 'spring', stiffness: 100, duration: 1, delay: 0.6 }} >          

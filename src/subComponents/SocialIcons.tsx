@@ -38,10 +38,10 @@ const SocialIcons = () => {
     <div className='flex flex-row items-center justify-center mx-auto fixed 
         top-5 left-0 bg-transparent z-30 last:-mx-1 last:my-0 -ml-1 '>
           
-        <motion.span className='h-[0.2px] bg-[#e9e9e9] mr-1 my-auto
+        <motion.span className='h-[0.6px] bg-[#e9e9e9] mr-1 my-auto
             w-[calc(28vw)] md:w-[calc(30vw)] 
             lg:w-[calc(33vw)] xl:w-[calc(40vw)] 2xl:w-[calc(45vw)]'
-            initial={{ width: 0, height: 0.2 }}
+            initial={{ width: 0, height: 0.6 }}
             animate={{ 
                 width: ( size.width < 480) ? 'calc(28vw)' : 
                     ( ( size.width >= 481 && size.width < 768) ? 'calc(37.5vw)' : 
@@ -57,7 +57,7 @@ const SocialIcons = () => {
             initial={{opacity: 0, scale: 0 }}
             animate={{opacity: [0, 0.2, 0.8, 1], scale:[0, 1.3 ,2,1]}}
             transition={{type:'spring', duration:1, delay:1}} >
-            <Link href={{pathname:"https://github.com/Salarghi93", query: {} }} >
+            <Link href={{pathname:"https://github.com/salar-ghi", query: {} }} >
                 <Github width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
                     w-4 h-4 lg:w-[22px] lg:h-[22px]
