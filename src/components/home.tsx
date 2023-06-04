@@ -106,11 +106,11 @@ const Home = () => {
             </div>
 
             <div className='txtintro flex flex-col mx-auto text-center items-center justify-center mt-4 fixed inset-x-1
-                w-[90vw] bottom-14 sm:w-[80vw] md:w-[68vw] lg:w-[60vw] xl:w-[48vw] 2xl:w-[44vw]'>
+                w-[92vw] bottom-14 sm:w-[80vw] md:w-[68vw] lg:w-[62vw] xl:w-[50vw] 2xl:w-[46vw]'>
                     {/* mt-4 fixed inset-x-0 */}
 
                 <motion.h2 className="font-['Fonda-italic'] tracking-wider font-thin text-[#e9e9e9] 
-                    text-sm sm:text-base md:text-xl ">
+                    text-xs sm:text-sm md:text-lg ">
                     Hi, I'm
                 </motion.h2>
 
@@ -145,28 +145,15 @@ const Home = () => {
                 </div>
                 
                 <motion.h2 className="font-['Fonda-italic'] tracking-widest text-[#e9e9e9] break-words mt-3
-                    text-sm font-thin md:text-sm md:font-thin lg:text-base lg:font-medium"
+                    text-xs font-thin md:text-sm lg:text-base lg:font-medium"
                     initial="hidden" animate="visible" variants={container}>
-                    
-                    {/* an entrepreneur and software architect */}
-
                     machine learning specialist and software engineer with experience 
                     in developing web applications and software solutions.
-
                 </motion.h2>
 
 
 
-                {/* <h2>
-                    can you generate a text for portfolio website a person who is entrepreneur
-                    / 
-                    Hello! I’m an entrepreneur with experience in developing and launching successful businesses.
-                    I have worked on projects ranging from e-commerce platforms to mobile applications. 
-                    My expertise lies in identifying market opportunities and developing innovative solutions to meet the needs of customers.
-                    On this website, you’ll find examples of my work, including businesses I’ve launched both professionally and independently. 
-                    You’ll also find information about my skills and experience, as well as my education and certifications.
-                    If you’re interested in working together or have any questions about my work, please don’t hesitate to get in touch!
-                </h2> */}
+
 
             </div>
         </div>

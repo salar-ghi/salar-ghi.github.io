@@ -5,11 +5,11 @@
 
 .pyramid {
     width: calc(100vw);
-    height: calc(72vh);
+    height: calc(90vh);
     margin: auto;
     position: relative;
     perspective: 300px;
-    perspective-origin: 55% 30%;
+    perspective-origin: 54% 33%;
 }
 
 .side {
@@ -157,281 +157,281 @@
 
 @media only screen and (max-width: 500px) {
     .side {
-        left: calc(38vw);
-        top: calc(28vh) ;
-        border-left: 45px solid transparent;
-        border-right: 45px solid transparent;
-        border-bottom: 90px solid #d8d8d8;
+        top: calc(29.5vh);
+        left: calc(39.2vw);
+        border-left: 44px solid transparent;
+        border-right: 44px solid transparent;
+        border-bottom: 87px solid #d8d8d8;
     }
 
     .Logo {
-        top: calc(44vh);
+        top: calc(44.5vh);
         left: calc(44vw);
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .shadow {
         top: calc(50vh);
         left: calc(45vw);
-        width: 35px;
-        height: 35px;
-        background-color: rgba(163, 163, 163, 0.54);
-        box-shadow: 0 0 30px 30px rgba(117, 117, 117, 0.58);
+        width: 34px;
+        height: 34px;
+        background-color: rgba(163, 163, 163, 0.51);
+        box-shadow: 0 0 30px 30px rgba(117, 117, 117, 0.54);
     }
 }
 
 /* ***************************************************** */
-@media (500px <= width <= 768px) and (height <= 880px) {
+@media (500px <= width <= 768px) and (height <= 830px) {
     .side {
-        top: calc(27vh) ;
-        left: calc(42vw);
-        border-left: 52px solid transparent;
-        border-right: 52px solid transparent;
-        border-bottom: 104px solid #d8d8d8;
+        top: calc(26.7vh) ;
+        left: calc(41vw);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 99px solid #d8d8d8;
     }
 
     .Logo {
-        top: calc(42vh);
+        top: calc(41.8vh);
         left: calc(44vw);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .shadow {
-        top: calc(48vh);
+        top: calc(47vh);
         left: calc(46vw);
-        width: 38px;
-        height: 38px;
+        width: 34px;
+        height: 34px;
         background-color: rgba(163, 163, 163, 0.54);
-        box-shadow: 0 0 33px 33px rgba(117, 117, 117, 0.58);
+        box-shadow: 0 0 32px 32px rgba(117, 117, 117, 0.58);
     }
 }
 
-@media (768.1px <= width <= 1100px) and (height <= 880px) {
+@media (768.1px <= width <= 1100px) and (height <= 830px) {
     .side {
         top: calc(27vh);
         left: calc(45vw);
-        border-left: 54px solid transparent;
-        border-right: 54px solid transparent;
-        border-bottom: 108px solid #d8d8d8;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+        border-bottom: 103px solid #d8d8d8;
     }
 
     .Logo {
         top: calc(43vh);
         left: calc(46vw);
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
     
     .shadow {
         top: calc(49vh);
         left: calc(48vw);
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         background-color: rgba(163, 163, 163, 0.5);
-        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.58);
+        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.58);
     }
 }
 
 
-@media (1100.1px <= width <= 1500px)and (height <= 880px) {
+@media (1100.1px <= width <= 1500px)and (height <= 830px) {
     .side {
-        top: calc(23vh) ;
-        left: calc(46vw);
-        border-left: 62px solid transparent;
-        border-right: 62px solid transparent;
-        border-bottom: 122px solid #d8d8d8;
+        top: calc(24.5vh) ;
+        left: calc(46.5vw);
+        border-left: 54px solid transparent;
+        border-right: 54px solid transparent;
+        border-bottom: 106px solid #d8d8d8;
+    }
+
+    .Logo {
+        top: calc(40.5vh);
+        left: calc(47.5vw);
+        font-size: 1.8rem;
+    }
+    
+    .shadow {
+        top: calc(47vh);
+        left: calc(48.5vw);
+        width: 37px;
+        height: 37px;
+        background-color: rgba(163, 163, 163, 0.45);
+        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.54);
+    }
+}
+
+@media (1500.1px <= width <= 1900px)and (height <= 830px) {
+    .side {
+        top: calc(23vh);
+        left: calc(47vw);
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+        border-bottom: 110px solid #d8d8d8;
     }
 
     .Logo {
         top: calc(39.5vh);
-        left: calc(47vw);
+        left: calc(48.3vw);
+        font-size: 1.75rem;
+    }
+    
+    .shadow {
+        top: calc(46vh);
+        left: calc(49vw);
+        width: 39px;
+        height: 39px;
+        background-color: rgba(163, 163, 163, 0.45);
+        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.52);
+    }
+}
+
+@media (1900.1px <= width <= 3500px)and (height <= 830px) {
+    .side {
+        top: calc(22vh) ;
+        left: calc(48vw);
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 119px solid #d8d8d8;
+    }
+
+    .Logo {
+        top: calc(40vh);
+        left: calc(49vw);
         font-size: 2rem;
     }
     
     .shadow {
         top: calc(47vh);
-        left: calc(48vw);
-        width: 42px;
-        height: 42px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 38px 38px rgba(117, 117, 117, 0.54);
-    }
-}
-
-@media (1500.1px <= width <= 1900px)and (height <= 880px) {
-    .side {
-        top: calc(21vh);
-        left: calc(48vw);
-        border-left: 66px solid transparent;
-        border-right: 66px solid transparent;
-        border-bottom: 130px solid #d8d8d8;
-    }
-
-    .Logo {
-        top: calc(38.5vh);
-        left: calc(49vw);
-        font-size: 2.1rem;
-    }
-    
-    .shadow {
-        top: calc(45vh);
         left: calc(50vw);
-        width: 45px;
-        height: 45px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 40px 40px rgba(117, 117, 117, 0.54);
-    }
-}
-
-@media (1900.1px <= width <= 3500px)and (height <= 880px) {
-    .side {
-        top: calc(21.5vh) ;
-        left: calc(48vw);
-        border-left: 71px solid transparent;
-        border-right: 71px solid transparent;
-        border-bottom: 140px solid #d8d8d8;
-    }
-
-    .Logo {
-        top: calc(41vh);
-        left: calc(49vw);
-        font-size: 2.3rem;
-    }
-    
-    .shadow {
-        top: calc(48vh);
-        left: calc(50vw);
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         background-color: rgba(163, 163, 163, 0.48);
-        box-shadow: 0 0 40px 40px rgba(117, 117, 117, 0.54);
+        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.54);
     }
 }
 
 /* ***************************************************** */
 
-@media (500px <= width <= 768px) and (height >= 880px) {
+@media (500px <= width <= 768px) and (height >= 830px) {
     .side {
-        left: calc(42vw);
         top: calc(30vh) ;
-        border-left: 52px solid transparent;
-        border-right: 52px solid transparent;
-        border-bottom: 104px solid #d8d8d8;
+        left: calc(41.5vw);
+        border-left: 51px solid transparent;
+        border-right: 51px solid transparent;
+        border-bottom: 101px solid #d8d8d8;
     }
 
     .Logo {
-        top: calc(42vh);
-        left: calc(44vw);
-        font-size: 1.8rem;
+        top: calc(42.5vh);
+        left: calc(44.5vw);
+        font-size: 1.6rem;
     }
     
     .shadow {
-        top: calc(48vh);
+        top: calc(47vh);
         left: calc(46vw);
-        width: 38px;
-        height: 38px;
+        width: 36px;
+        height: 36px;
         background-color: rgba(163, 163, 163, 0.54);
         box-shadow: 0 0 33px 33px rgba(117, 117, 117, 0.58);
     }
 }
 
-@media (768.1px <= width <= 1100px) and (height >= 880px) {
+@media (768.1px <= width <= 1100px) and (height >= 830px) {
     .side {
+        top: calc(29vh) ;
         left: calc(45vw);
-        top: calc(30vh) ;
         border-left: 54px solid transparent;
         border-right: 54px solid transparent;
         border-bottom: 108px solid #d8d8d8;
     }
 
     .Logo {
-        top: calc(43vh);
-        left: calc(46vw);
-        font-size: 1.9rem;
+        top: calc(41.7vh);
+        left: calc(46.8vw);
+        font-size: 1.7rem;
     }
     
     .shadow {
-        top: calc(49vh);
+        top: calc(46vh);
         left: calc(48vw);
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         background-color: rgba(163, 163, 163, 0.5);
-        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.58);
+        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.58);
     }
 }
 
 
-@media (1100.1px <= width <= 1500px) and (height >= 880px) {
+@media (1100.1px <= width <= 1500px) and (height >= 830px) {
     .side {
+        top: calc(27.5vh) ;
         left: calc(46vw);
-        top: calc(26vh) ;
-        border-left: 62px solid transparent;
-        border-right: 62px solid transparent;
-        border-bottom: 122px solid #d8d8d8;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 119px solid #d8d8d8;
     }
 
     .Logo {
-        top: calc(39.5vh);
-        left: calc(47vw);
-        font-size: 2rem;
+        top: calc(41.7vh);
+        left: calc(48vw);
+        font-size: 1.8rem;
     }
     
     .shadow {
-        top: calc(47vh);
-        left: calc(48vw);
-        width: 42px;
-        height: 42px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 38px 38px rgba(117, 117, 117, 0.54);
-    }
-}
-
-@media (1500.1px <= width <= 1900px) and (height >= 880px) {
-    .side {
-        left: calc(48vw);
-        top: calc(23vh);
-        border-left: 66px solid transparent;
-        border-right: 66px solid transparent;
-        border-bottom: 130px solid #d8d8d8;
-    }
-
-    .Logo {
-        top: calc(37vh);
+        top: calc(46vh);
         left: calc(49vw);
-        font-size: 2.1rem;
-    }
-    
-    .shadow {
-        top: calc(43vh);
-        left: calc(50vw);
-        width: 45px;
-        height: 45px;
+        width: 37px;
+        height: 37px;
         background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 40px 40px rgba(117, 117, 117, 0.54);
+        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.54);
     }
 }
 
-@media (1900.1px <= width <= 3500px) and (height >= 880px) {
+@media (1500.1px <= width <= 1900px) and (height >= 830px) {
     .side {
+        top: calc(24.3vh);
         left: calc(48vw);
-        top: calc(23vh) ;
-        border-left: 71px solid transparent;
-        border-right: 71px solid transparent;
-        border-bottom: 140px solid #d8d8d8;
+        border-left: 64px solid transparent;
+        border-right: 64px solid transparent;
+        border-bottom: 127px solid #d8d8d8;
     }
 
     .Logo {
         top: calc(38vh);
         left: calc(49vw);
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     
     .shadow {
-        top: calc(45vh);
+        top: calc(43vh);
         left: calc(50vw);
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(163, 163, 163, 0.45);
+        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.54);
+    }
+}
+
+@media (1900.1px <= width <= 3500px) and (height >= 830px) {
+    .side {
+        top: calc(26.5vh) ;
+        left: calc(48vw);
+        border-left: 66px solid transparent;
+        border-right: 66px solid transparent;
+        border-bottom: 131px solid #d8d8d8;
+    }
+
+    .Logo {
+        top: calc(41vh);
+        left: calc(49.2vw);
+        font-size: 2rem;
+    }
+    
+    .shadow {
+        top: calc(45.5vh);
+        left: calc(50vw);
+        width: 40px;
+        height: 40px;
         background-color: rgba(163, 163, 163, 0.48);
-        box-shadow: 0 0 40px 40px rgba(117, 117, 117, 0.54);
+        box-shadow: 0 0 36px 36px rgba(117, 117, 117, 0.52);
     }
 }
 

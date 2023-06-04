@@ -34,8 +34,6 @@ function useWindowSize() {
 
 const SocialIcons = () => {
     const size = useWindowSize();
-    console.log(size.width)
-    console.log(size.height)
   return (
     <div className='flex flex-row items-center justify-center mx-auto fixed 
         top-5 left-0 bg-transparent z-30 last:-mx-1 last:my-0 -ml-1 '>
@@ -45,11 +43,11 @@ const SocialIcons = () => {
             lg:w-[calc(33vw)] xl:w-[calc(40vw)] 2xl:w-[calc(45vw)]'
             initial={{ width: 0, height: 0.2 }}
             animate={{ 
-                width: ( size.width < 480) ? 'calc(29vw)' : 
-                    ( ( size.width >= 481 && size.width < 768) ? 'calc(38vw)' : 
-                    ( ( size.width >= 769 && size.width < 1100) ? 'calc(43vw)' : 
-                    ( ( size.width >= 1100.1 && size.width < 1500) ? 'calc(43.5vw)' : 
-                    ( ( size.width >= 1501 && size.width < 2200) ? 'calc(45.5vw)' : 'calc(47.5vw)'
+                width: ( size.width < 480) ? 'calc(28vw)' : 
+                    ( ( size.width >= 481 && size.width < 768) ? 'calc(37.5vw)' : 
+                    ( ( size.width >= 769 && size.width < 1100) ? 'calc(42.5vw)' : 
+                    ( ( size.width >= 1100.1 && size.width < 1500) ? 'calc(43vw)' : 
+                    ( ( size.width >= 1501 && size.width < 2200) ? 'calc(45vw)' : 'calc(47vw)'
                   ))))
               }}
             transition= {{ type: 'spring', duration: 1, delay: 0.6 }}>
@@ -62,8 +60,7 @@ const SocialIcons = () => {
             <Link href={{pathname:"https://github.com/Salarghi93", query: {} }} >
                 <Github width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-4 h-4
-                    lg:w-6 lg:h-6
+                    w-4 h-4 lg:w-[22px] lg:h-[22px]
                     "/>
             </Link>
         </motion.div>
@@ -75,8 +72,7 @@ const SocialIcons = () => {
             <Link href={{pathname:"https://www.linkedin.com/in/salar-ghahremani/", query: {} }} >
                 <Linkedin width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none                    
-                    w-4 h-4
-                    lg:w-6 lg:h-6
+                    w-4 h-4 lg:w-[20px] lg:h-[20px]
                     "/>
             </Link>
         </motion.div>
@@ -88,8 +84,7 @@ const SocialIcons = () => {
             <Link href={{pathname:"https://twitter.com/salarghi", query: {} }} >
                 <Twitter width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-4 h-4
-                    lg:w-6 lg:h-6
+                    w-4 h-4 lg:w-[20px] lg:h-[20px]
                     "/>
             </Link>
         </motion.div>
@@ -101,8 +96,7 @@ const SocialIcons = () => {
             <Link href={{pathname:"https://www.instagram.com/salarghi", query: {} }} >
                 <Instagram width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-4 h-4
-                    lg:w-6 lg:h-6"/>
+                    w-4 h-4 lg:w-[21px] lg:h-[21px]"/>
             </Link>
         </motion.div>
 
@@ -113,8 +107,7 @@ const SocialIcons = () => {
             <Link href={{pathname:"https://www.youtube.com/@Salar_G", query: {} }} >
                 <Youtube width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-4 h-4
-                    lg:w-6 lg:h-6"/>
+                    w-4 h-4 lg:w-[22px] lg:h-[22px]"/>
             </Link>
         </motion.div>
 
@@ -125,12 +118,9 @@ const SocialIcons = () => {
             <Link href={{pathname:"mailto:salar.ghi1993@gmail.com", query: {} }} >
                 <Envelop width={20} height={20} fill={'#e9e9e9'} className="hover:scale-125 transition-all transform motion-reduce:transition-all 
                     ease-in-out hover:duration-200 motion-reduce:hover:transform-none
-                    w-4 h-4
-                    lg:w-6 lg:h-6"/>
+                    w-4 h-4 lg:w-[20px] lg:h-[20px]"/>
             </Link>
         </motion.div>
-
-        
 
     </div>
   )
