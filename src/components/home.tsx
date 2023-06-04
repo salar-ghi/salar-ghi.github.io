@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-// import "@/assets/styles/pyramid.css"
 
 const sentence1 = {
     hidden: { opacity: 0 },
@@ -55,27 +54,6 @@ const container ={
     }),
 };
 
-const child = {
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: "spring",
-            damping:12,
-            stiftness: 100,
-        },
-    },
-    hidden: {
-        opacity: 0,
-        y: 20,
-        transition: {
-            type: "spring",
-            damping: 12,
-            stiftness: 100,
-        },
-    },
-};
-
 const Home = () => {
     const words = Intro.split(" ");
 
@@ -107,11 +85,10 @@ const Home = () => {
 
             <div className='txtintro flex flex-col mx-auto text-center items-center justify-center mt-4 fixed inset-x-1
                 w-[92vw] bottom-14 sm:w-[80vw] md:w-[68vw] lg:w-[62vw] xl:w-[50vw] 2xl:w-[46vw]'>
-                    {/* mt-4 fixed inset-x-0 */}
 
                 <motion.h2 className="font-['Fonda-italic'] tracking-wider font-thin text-[#e9e9e9] 
                     text-xs sm:text-sm md:text-lg ">
-                    Hi, I'm
+                    Hi, I’m
                 </motion.h2>
 
                 <div className="flex flex-row font-['Fonda-italic'] text-[#D6BD68] bg-transparent font-thin">
@@ -151,15 +128,8 @@ const Home = () => {
                     in developing web applications and software solutions.
                 </motion.h2>
 
-
-
-
-
             </div>
         </div>
-
-
-
   )
 }
 
