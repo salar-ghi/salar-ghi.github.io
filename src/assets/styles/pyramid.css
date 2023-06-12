@@ -8,8 +8,8 @@
     height: calc(90vh);
     margin: auto;
     position: relative;
-    perspective: 300px;
-    perspective-origin: 54% 33%;
+    perspective: 320px;
+    perspective-origin: 54% 35%;
 }
 
 .side {
@@ -22,18 +22,21 @@
     border-right: 71px solid transparent;
     border-bottom: 140px solid #d8d8d8;
     transform-origin: 50% 0%;
-    animation: spin 5s infinite linear;
-    transform: translate(-50%, -50%);
+    animation: spin 8s infinite linear;
+    /* transform: translate(-50%, -50%); */
 }
 
 .back {
-    animation-delay: -2.5s;
+    animation-delay: -4s; 
+    /* -($speed/2) + s; */
 }
 .right {
-    animation-delay: -1.25s;
+    animation-delay: -2s;
+    /* -($speed/4) + s; */
 }
 .left {
-    animation-delay: -3.75s;
+    animation-delay: -6s;
+    /* -($speed * 0.75) + s; */
 }
 
 @keyframes spin {
@@ -87,7 +90,7 @@
     text-align: center;
     justify-content: center;    
     text-shadow: 0 2.5px 2.5px rgba(166, 124, 0, 0.55);
-    animation: logoMotion 5s infinite linear;
+    animation: logoMotion 8s infinite linear;
     z-index: 5;
     font-size: 2.25rem;
 }
@@ -117,7 +120,7 @@
     height: 45px;
     background-color: rgba(163, 163, 163, 0.68);
     box-shadow: 0 0 45px 45px rgba(117, 117, 117, 0.88);
-    animation: shadow 5s infinite linear;
+    animation: shadow 8s infinite linear;
 }
 @keyframes shadow {
     0% {
