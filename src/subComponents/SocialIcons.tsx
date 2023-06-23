@@ -44,9 +44,9 @@ const SocialIcons = () => {
             initial={{ width: 0, height: 0.6 }}
             animate={{ 
                 width: ( size.width < 480) ? 'calc(28vw)' : 
-                    ( ( size.width >= 481 && size.width < 768) ? 'calc(35vw)' : 
-                    ( ( size.width >= 769 && size.width < 1100) ? 'calc(41.3vw)' : 
-                    ( ( size.width >= 1100.1 && size.width < 1500) ? 'calc(41.8vw)' : 
+                    ( ( size.width >= 481 && size.width < 768) ? 'calc(34vw)' : 
+                    ( ( size.width >= 768 && size.width < 1100) ? 'calc(38.5vw)' : 
+                    ( ( size.width >= 1100.1 && size.width < 1500) ? 'calc(41.5vw)' : 
                     ( ( size.width >= 1501 && size.width < 2200) ? 'calc(44.5vw)' : 'calc(46.5vw)'
                   ))))
               }}
