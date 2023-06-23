@@ -153,7 +153,7 @@
 } */
 
 
-@media (max-width: 500px) and (height <= 750px) {
+@media screen and (max-width: 500px), screen and (max-height <= 750px) {
     .side {
         top: calc(32vh);
         left: calc(39vw);
@@ -178,7 +178,7 @@
     }
 }
 
-@media (max-width: 500px) and (height >= 750px) {
+@media screen and (max-width: 500px), screen and (min-height > 750px) {
     .side {
         top: calc(33.5vh);
         left: calc(39vw);
