@@ -8,8 +8,8 @@
     height: calc(90vh);
     margin: auto;
     position: relative;
-    perspective: 320px;
-    perspective-origin: 54% 35%;
+    perspective: 310px;
+    perspective-origin: 54% 38%;
 }
 
 .side {
@@ -18,24 +18,24 @@
     top: calc(25vh) ;
     width: 0px;
     height: 0px;
-    border-left: 71px solid transparent;
-    border-right: 71px solid transparent;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
     border-bottom: 140px solid #d8d8d8;
     transform-origin: 50% 0%;
-    animation: spin 8s infinite linear;
+    animation: spin 10s infinite linear;
     /* transform: translate(-50%, -50%); */
 }
 
 .back {
-    animation-delay: -4s; 
+    animation-delay: -5s; 
     /* -($speed/2) + s; */
 }
 .right {
-    animation-delay: -2s;
+    animation-delay: -2.5s;
     /* -($speed/4) + s; */
 }
 .left {
-    animation-delay: -6s;
+    animation-delay: -7.5s;
     /* -($speed * 0.75) + s; */
 }
 
@@ -44,22 +44,24 @@
         transform: rotateY(0deg) rotateX(30deg);
         /* border-bottom-color: #1abcff; */
         border-bottom-color: #e9e9e9;
+        opacity: 0.5;
    }
     25% {
         transform: rotateY(90deg) rotateX(30deg);
         /* border-bottom-color: #00a2e6; */
         /* border-bottom-color: #C5C5C5; */
         border-bottom-color: #d2d2d2;        
-        opacity: 1;
+        opacity: 0.3;
    }
     25.1% {
-        opacity: 0.2;
+        opacity: 0.3;
    }
     50% {
         transform: rotateY(180deg) rotateX(30deg);
         /* border-bottom-color: #0089c2; */
         /* border-bottom-color: #B3B3B3; */
         border-bottom-color: #bababa;
+        opacity: 0.3;
    }
     74.9% {
         opacity: 0.3;
@@ -69,12 +71,13 @@
         /* border-bottom-color: #007eb3; */
         /* border-bottom-color: #9C9C9C; */
         border-bottom-color: #a3a3a3;
-        opacity: 1;
+        opacity: 0.4;
    }
     100% {
         transform: rotateY(360deg) rotateX(30deg);
         /* border-bottom-color: #1abcff; */
         border-bottom-color: #e9e9e9;
+        opacity: 0.5;
    }
 }
 
@@ -114,13 +117,13 @@
 
 .shadow {
     position: absolute;
-    top: calc(33vh);
+    top: calc(30vh);
     left: calc(48vw);
     width: 45px;
     height: 45px;
     background-color: rgba(163, 163, 163, 0.68);
     box-shadow: 0 0 45px 45px rgba(117, 117, 117, 0.88);
-    animation: shadow 8s infinite linear;
+    animation: shadow 10s infinite linear;
 }
 @keyframes shadow {
     0% {
@@ -158,13 +161,13 @@
 } */
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (height <= 750px) {
     .side {
-        top: calc(29.5vh);
-        left: calc(39.2vw);
+        top: calc(32vh);
+        left: calc(39vw);
         border-left: 44px solid transparent;
         border-right: 44px solid transparent;
-        border-bottom: 87px solid #d8d8d8;
+        border-bottom: 87px ridge #E5E5E5;
     }
 
     .Logo {
@@ -174,23 +177,48 @@
     }
     
     .shadow {
-        top: calc(50vh);
+        top: calc(47.5vh);
         left: calc(45vw);
-        width: 34px;
-        height: 34px;
-        background-color: rgba(163, 163, 163, 0.51);
-        box-shadow: 0 0 30px 30px rgba(117, 117, 117, 0.54);
+        width: 35px;
+        height: 35px;
+        background-color: rgba(46, 46, 46, 0.66);
+        box-shadow: 0 0 40px 40px rgba(36, 36, 36, 0.68);
+    }
+}
+
+@media only screen and (max-width: 500px) and (height >= 750px) {
+    .side {
+        top: calc(33.5vh);
+        left: calc(39vw);
+        border-left: 44px solid transparent;
+        border-right: 44px solid transparent;
+        border-bottom: 87px ridge #E5E5E5;
+    }
+
+    .Logo {
+        top: calc(44.5vh);
+        left: calc(44vw);
+        font-size: 1.4rem;
+    }
+    
+    .shadow {
+        top: calc(46.5vh);
+        left: calc(45vw);
+        width: 35px;
+        height: 35px;
+        background-color: rgba(46, 46, 46, 0.66);
+        box-shadow: 0 0 40px 40px rgba(37, 37, 37, 0.65);
     }
 }
 
 /* ***************************************************** */
 @media (500px <= width <= 768px) and (height <= 830px) {
     .side {
-        top: calc(26.7vh) ;
-        left: calc(41vw);
+        top: calc(30vh) ;
+        left: calc(40vw);
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
-        border-bottom: 99px solid #d8d8d8;
+        border-bottom: 99px ridge #E5E5E5;
     }
 
     .Logo {
@@ -200,22 +228,22 @@
     }
     
     .shadow {
-        top: calc(47vh);
+        top: calc(45vh);
         left: calc(46vw);
-        width: 34px;
-        height: 34px;
-        background-color: rgba(163, 163, 163, 0.54);
-        box-shadow: 0 0 32px 32px rgba(117, 117, 117, 0.58);
+        width: 38px;
+        height: 38px;
+        background-color: rgba(36, 36, 36, 0.48);
+        box-shadow: 0 0 50px 50px rgba(28, 28, 28, 0.60);
     }
 }
 
 @media (768.1px <= width <= 1100px) and (height <= 830px) {
     .side {
-        top: calc(27vh);
-        left: calc(45vw);
+        top: calc(29.8vh);
+        left: calc(43vw);
         border-left: 52px solid transparent;
         border-right: 52px solid transparent;
-        border-bottom: 103px solid #d8d8d8;
+        border-bottom: 103px ridge #E5E5E5;
     }
 
     .Logo {
@@ -225,23 +253,23 @@
     }
     
     .shadow {
-        top: calc(49vh);
-        left: calc(48vw);
-        width: 35px;
-        height: 35px;
-        background-color: rgba(163, 163, 163, 0.5);
-        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.58);
+        top: calc(45vh);
+        left: calc(47vw);
+        width: 38px;
+        height: 38px;
+        background-color: rgba(36, 36, 36, 0.48);
+        box-shadow: 0 0 50px 50px rgba(28, 28, 28, 0.60);
     }
 }
 
 
 @media (1100.1px <= width <= 1500px)and (height <= 830px) {
     .side {
-        top: calc(24.5vh) ;
-        left: calc(46.5vw);
+        top: calc(30vh) ;
+        left: calc(45vw);
         border-left: 54px solid transparent;
         border-right: 54px solid transparent;
-        border-bottom: 106px solid #d8d8d8;
+        border-bottom: 106px ridge #E5E5E5;
     }
 
     .Logo {
@@ -251,22 +279,22 @@
     }
     
     .shadow {
-        top: calc(47vh);
-        left: calc(48.5vw);
+        top: calc(46vh);
+        left: calc(47.2vw);
         width: 37px;
         height: 37px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.54);
+        background-color: rgba(36, 36, 36, 0.48);
+        box-shadow: 0 0 50px 50px rgba(28, 28, 28, 0.60);
     }
 }
 
 @media (1500.1px <= width <= 1900px)and (height <= 830px) {
     .side {
-        top: calc(23vh);
+        top: calc(30vh);
         left: calc(47vw);
         border-left: 56px solid transparent;
         border-right: 56px solid transparent;
-        border-bottom: 110px solid #d8d8d8;
+        border-bottom: 110px ridge #E5E5E5;
     }
 
     .Logo {
@@ -276,22 +304,22 @@
     }
     
     .shadow {
-        top: calc(46vh);
+        top: calc(47vh);
         left: calc(49vw);
-        width: 39px;
-        height: 39px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.52);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(36, 36, 36, 0.48);
+        box-shadow: 0 0 52px 52px rgba(28, 28, 28, 0.60);
     }
 }
 
 @media (1900.1px <= width <= 3500px)and (height <= 830px) {
     .side {
-        top: calc(22vh) ;
+        top: calc(30vh) ;
         left: calc(48vw);
         border-left: 60px solid transparent;
         border-right: 60px solid transparent;
-        border-bottom: 119px solid #d8d8d8;
+        border-bottom: 119px ridge #E5E5E5;
     }
 
     .Logo {
@@ -301,12 +329,12 @@
     }
     
     .shadow {
-        top: calc(47vh);
-        left: calc(50vw);
+        top: calc(47.5vh);
+        left: calc(49.5vw);
         width: 40px;
         height: 40px;
-        background-color: rgba(163, 163, 163, 0.48);
-        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.54);
+        background-color: rgba(36, 36, 36, 0.48);
+        box-shadow: 0 0 55px 55px rgba(28, 28, 28, 0.60);
     }
 }
 
@@ -314,11 +342,11 @@
 
 @media (500px <= width <= 768px) and (height >= 830px) {
     .side {
-        top: calc(30vh) ;
-        left: calc(41.5vw);
+        top: calc(31vh);
+        left: calc(40.5vw);
         border-left: 51px solid transparent;
         border-right: 51px solid transparent;
-        border-bottom: 101px solid #d8d8d8;
+        border-bottom: 101px ridge #E5E5E5;
     }
 
     .Logo {
@@ -328,22 +356,22 @@
     }
     
     .shadow {
-        top: calc(47vh);
-        left: calc(46vw);
+        top: calc(45vh);
+        left: calc(46.5vw);
         width: 36px;
         height: 36px;
-        background-color: rgba(163, 163, 163, 0.54);
-        box-shadow: 0 0 33px 33px rgba(117, 117, 117, 0.58);
+        background-color: rgba(36, 36, 36, 0.45);
+        box-shadow: 0 0 55px 55px rgba(28, 28, 28, 0.58);
     }
 }
 
 @media (768.1px <= width <= 1100px) and (height >= 830px) {
     .side {
-        top: calc(29vh) ;
-        left: calc(45vw);
+        top: calc(30vh) ;
+        left: calc(43.7vw);
         border-left: 54px solid transparent;
         border-right: 54px solid transparent;
-        border-bottom: 108px solid #d8d8d8;
+        border-bottom: 108px ridge #E5E5E5;
     }
 
     .Logo {
@@ -353,23 +381,23 @@
     }
     
     .shadow {
-        top: calc(46vh);
-        left: calc(48vw);
+        top: calc(44vh);
+        left: calc(47.5vw);
         width: 38px;
         height: 38px;
-        background-color: rgba(163, 163, 163, 0.5);
-        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.58);
+        background-color: rgba(36, 36, 36, 0.46);
+        box-shadow: 0 0 55px 55px rgba(28, 28, 28, 0.58);
     }
 }
 
 
 @media (1100.1px <= width <= 1500px) and (height >= 830px) {
     .side {
-        top: calc(27.5vh) ;
-        left: calc(46vw);
+        top: calc(28.5vh) ;
+        left: calc(45vw);
         border-left: 60px solid transparent;
         border-right: 60px solid transparent;
-        border-bottom: 119px solid #d8d8d8;
+        border-bottom: 119px ridge #E5E5E5;
     }
 
     .Logo {
@@ -379,22 +407,22 @@
     }
     
     .shadow {
-        top: calc(46vh);
-        left: calc(49vw);
+        top: calc(43.5vh);
+        left: calc(48.3vw);
         width: 37px;
         height: 37px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 35px 35px rgba(117, 117, 117, 0.54);
+        background-color: rgba(36, 36, 36, 0.50);
+        box-shadow: 0 0 55px 55px rgba(28, 28, 28, 0.60);
     }
 }
 
 @media (1500.1px <= width <= 1900px) and (height >= 830px) {
     .side {
-        top: calc(24.3vh);
-        left: calc(48vw);
+        top: calc(29.5vh);
+        left: calc(47vw);
         border-left: 64px solid transparent;
         border-right: 64px solid transparent;
-        border-bottom: 127px solid #d8d8d8;
+        border-bottom: 127px ridge #E5E5E5;
     }
 
     .Logo {
@@ -404,22 +432,22 @@
     }
     
     .shadow {
-        top: calc(43vh);
-        left: calc(50vw);
+        top: calc(46vh);
+        left: calc(49.4vw);
         width: 40px;
         height: 40px;
-        background-color: rgba(163, 163, 163, 0.45);
-        box-shadow: 0 0 37px 37px rgba(117, 117, 117, 0.54);
+        background-color: rgba(36, 36, 36, 0.50);
+        box-shadow: 0 0 55px 55px rgba(28, 28, 28, 0.60);
     }
 }
 
 @media (1900.1px <= width <= 3500px) and (height >= 830px) {
     .side {
-        top: calc(26.5vh) ;
-        left: calc(48vw);
+        top: calc(29.5vh) ;
+        left: calc(47vw);
         border-left: 66px solid transparent;
         border-right: 66px solid transparent;
-        border-bottom: 131px solid #d8d8d8;
+        border-bottom: 131px ridge #E5E5E5;
     }
 
     .Logo {
@@ -429,12 +457,12 @@
     }
     
     .shadow {
-        top: calc(45.5vh);
-        left: calc(50vw);
+        top: calc(46vh);
+        left: calc(49.4vw);
         width: 40px;
         height: 40px;
-        background-color: rgba(163, 163, 163, 0.48);
-        box-shadow: 0 0 36px 36px rgba(117, 117, 117, 0.52);
+        background-color: rgba(36, 36, 36, 0.50);
+        box-shadow: 0 0 55px 55px rgba(28, 28, 28, 0.60);
     }
 }
 

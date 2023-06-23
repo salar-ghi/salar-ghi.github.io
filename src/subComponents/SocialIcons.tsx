@@ -44,10 +44,10 @@ const SocialIcons = () => {
             initial={{ width: 0, height: 0.6 }}
             animate={{ 
                 width: ( size.width < 480) ? 'calc(28vw)' : 
-                    ( ( size.width >= 481 && size.width < 768) ? 'calc(37.5vw)' : 
-                    ( ( size.width >= 769 && size.width < 1100) ? 'calc(42.5vw)' : 
-                    ( ( size.width >= 1100.1 && size.width < 1500) ? 'calc(43vw)' : 
-                    ( ( size.width >= 1501 && size.width < 2200) ? 'calc(45vw)' : 'calc(47vw)'
+                    ( ( size.width >= 481 && size.width < 768) ? 'calc(35vw)' : 
+                    ( ( size.width >= 769 && size.width < 1100) ? 'calc(41.3vw)' : 
+                    ( ( size.width >= 1100.1 && size.width < 1500) ? 'calc(41.8vw)' : 
+                    ( ( size.width >= 1501 && size.width < 2200) ? 'calc(44.5vw)' : 'calc(46.5vw)'
                   ))))
               }}
             transition= {{ type: 'spring', duration: 1, delay: 0.6 }}>

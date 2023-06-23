@@ -68,7 +68,7 @@ const Home = () => {
                 <div className="side right"></div>
                 <div className="side back"></div>
                 
-                <motion.h2 className="Logo
+                {/* <motion.h2 className="Logo
                     tracking-wider font-semibold font-['Niconne'] [word-spacing: 1.4cm]"
                     variants={sentence1} initial="hidden" animate="visible" >
                     {name.split("").map((char, index) => {
@@ -79,7 +79,8 @@ const Home = () => {
                         </motion.span>
                         )}
                     )}
-                </motion.h2>
+                </motion.h2> */}
+
                 <div className="shadow"></div>
             </div>
 
@@ -91,7 +92,7 @@ const Home = () => {
                     Hi, I’m
                 </motion.h2>
 
-                <div className="flex flex-row font-['Fonda-italic'] text-[#D6BD68] bg-transparent font-normal my-2 sm:my-2 ">
+                <div className="flex flex-row font-['Fonda-italic'] text-[#CBAA5E] bg-transparent font-normal my-2 sm:my-2 ">
                 
                     <motion.h2 className="flex flex-row tracking-wider text-shadow-golden 
                         shadow-[#a67c00] text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-4xl "
